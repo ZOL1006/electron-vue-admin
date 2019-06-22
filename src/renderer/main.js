@@ -11,8 +11,9 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  components: { App },
+  components: { App }, // 1.0
   router,
   store,
-  template: '<App/>'
+  template: '<App/>',
+  render: h => h(App) // 2.0
 }).$mount('#app')
